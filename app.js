@@ -13,7 +13,7 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById(`valorUsuario`).value);
     
     if (numeroDeUsuario === numeroSecreto){
-        asignarTextoAlElemento(`p`, `¡Felicidades Asertaste! el numero secreto es: ${numeroSecreto}, y lo lograste en: ${intentos} ${(intentos == 1) ? 'intento' : 'intentos'}`);
+        asignarTextoAlElemento(`p`, `¡Felicidades Acertaste! el numero secreto es: ${numeroSecreto}, y lo lograste en: ${intentos} ${(intentos == 1) ? 'intento' : 'intentos'}`);
         document.getElementById(`reiniciar`).removeAttribute(`disabled`);
     }else{
         if (numeroDeUsuario > numeroSecreto){
